@@ -1,0 +1,168 @@
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+.clear {zoom:1; clear:both;} 
+.clear:after {
+	content:''; 
+	display:block; 
+	clear:both; 
+	visibility:hidden; 
+	height:0;
+}
+body {
+	transition: all 0.3s all;
+}
+header {
+	position: fixed;
+	width: 100%;
+	z-index: 5;
+}
+.mainnav {
+	background: url('img/line.png') center repeat-x;
+	height: 180px;
+	text-align: center;
+}
+.mainnav li {
+	display: inline-block;
+}
+.mainnav a {
+	display: block;
+	width: 400px;
+	height: 171px;
+	cursor: pointer;
+}
+.click-about {
+	background: url('img/about.png') no-repeat;
+}
+.click-skill {
+	background: url('img/skill.png') no-repeat;
+}
+.click-works {
+	background: url('img/works.png') no-repeat;
+}
+.click-about:hover {
+	background: url('img/about_hover.png') no-repeat;
+}
+.click-skill:hover {
+	background: url('img/skill_hover.png') no-repeat;
+}
+.click-works:hover {
+	background: url('img/works_hover.png') no-repeat;
+}
+.home,
+.about,
+.skill,
+.works {
+	width: 100%;
+	height: 900px;
+	padding: 0;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.home {
+	position: relative;
+	background-image: url('img/0001.png');
+}
+.about {
+	background-image: url('img/0002.png');
+}
+.skill {
+	padding-top: 150px;
+	background-image: url('img/0003.png');
+	text-align: center;
+}
+.works {
+	position: relative;
+	background-image: url('img/0004.png');
+}
+.name-elsa {
+	margin: 0 auto;
+	width: 1024px;
+	padding-top: 230px;
+}
+.elsa-info {
+	margin: 0 auto;
+	position: relative;
+	top:50%;
+	transform:translateY(-50%);
+	background: url('img/elsa-info.png') no-repeat;
+	font-size: 20px;
+	font-weight: bold;
+	width: 494px;
+	height: 260px;
+	padding: 70px 40px 80px 60px;
+}
+.skill-wrap02 {
+	margin-top: 30px;
+}
+.skill-list {
+	margin: 0 20px;
+	display: inline-block;
+}
+.skill-list h3 {
+	color: #FFA042;
+	font-weight: bold;
+	font-size: 20px;
+}
+#book {
+	position: absolute;
+	margin:auto;
+	background: url("img/book.png") no-repeat;
+	width: 700px;
+	height: 498px;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+}
+
+#pages section {
+	background: url("img/paper.png") no-repeat;
+	display: block;
+	width: 329px;
+	height: 495px;
+	position: absolute;
+	left: 351px;
+	top: 0px;
+	overflow: hidden;
+}
+#pages section > div {
+	display: block;
+	width: 340px;
+	height: 190px;
+	font-size: 12px;
+	padding: 30px;
+}
+
+#pageflip-canvas {
+	position: absolute;
+	z-index: 100;
+}
+svg path {
+  fill: #006494;
+  stroke: #1B98E0;
+  stroke-width: 3px;
+ stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+  opacity: 0;
+  animation: dash 6s linear both;
+}
+
+@keyframes dash {
+  from {
+  }
+  to {
+    opacity: 1;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1800;
+      fill: #114B5F;
+  }
+}
+footer {
+	background: linear-gradient(to bottom, #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%);
+	line-height: 50px;
+	text-align: center;
+}
